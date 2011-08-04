@@ -1,0 +1,1 @@
+require File.expand_path('../lib/abstract_message_queue', File.dirname(__FILE__))
