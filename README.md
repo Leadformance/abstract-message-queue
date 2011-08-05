@@ -5,7 +5,7 @@ Ruby.  It handles serializing and deserializing data for us.
 
 # What servers does it support?
 
-Any server that supports the "stomp" protocol, such as ActiveMQ
+Any server that supports the "stomp" protocol such as ActiveMQ, RabbitMQ, OpenMQ and many others
 
 # How do I use it?
 
