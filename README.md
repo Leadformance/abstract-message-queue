@@ -13,6 +13,7 @@ make the following files and then run subscriber.rb and publisher.rb,
 be sure the install the gem first.
 
 config.rb
+
 ```ruby
 AMQ.config.driver = :stomp
 
@@ -27,6 +28,7 @@ AMQ.config.connection_settings = {
 ```
 
 subscriber.rb
+
 ```ruby
 require 'rubygems'
 require 'abstract_message_queue'
@@ -47,6 +49,7 @@ end
 ```
 
 publisher.rb
+
 ```ruby
 require 'rubygems'
 require 'abstract_message_queue'
