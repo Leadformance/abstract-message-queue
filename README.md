@@ -65,8 +65,7 @@ client.publish :queue_name, :event => :point_of_sale_update, :id => 37833
 
 # Any current bugs?
 
-A subscriber which reads a message consumes it instantly, need to look up
-how to fix this
+None apparent, it's only been tested with ActiveMQ so others i'm not as certain about.
 
 # Future work?
 
