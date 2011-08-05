@@ -8,7 +8,10 @@ module AMQ
          :test => "AMQ::Drivers::Test"
       }
 
-      attr_accessor :connection_settings
+      attr_writer :connection_settings
+      def connection_settings
+         @connection_settings ||= {}
+      end
 
       attr_reader :driver
       def driver=(driver)
