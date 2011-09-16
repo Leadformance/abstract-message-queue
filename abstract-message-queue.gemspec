@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "json", "~> 1.6"
-  s.add_dependency "active_support", "~> 3.0"
+  s.add_dependency "activesupport", "~> 3.0"
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec", "~> 2.6"
   s.add_development_dependency "stomp", "~> 1.1"
