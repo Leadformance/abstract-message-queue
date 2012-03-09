@@ -12,11 +12,11 @@ class AMQ::Drivers::Stomp
    end
 
    def publish(message, data={})
-      @client.publish("/topic/#{message}", data.to_json, :persistent => true)
+      @client.publish("/queue/#{message}", data.to_json, :persistent => true)
    end
 
    def subscribe(message, &block)
-      @client.subscribe("/topic/#{message}") do |message|
+      @client.subscribe("/queue/#{message}") do |message|
          begin
             block.call(JSON.parse message.body)
          rescue e

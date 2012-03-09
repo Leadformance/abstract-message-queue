@@ -38,15 +38,15 @@ describe AMQ::Drivers::Stomp do
       
       client.subscribe "foo", &callback
 
-      driver.subscribers["/topic/foo"].length.should == 1
+      driver.subscribers["/queue/foo"].length.should == 1
    end
 
    it "should publish data to the queue in JSON encoded format" do
       client.publish :foo, :bar => :baz
 
-      driver.messages["/topic/foo"].length.should == 1
+      driver.messages["/queue/foo"].length.should == 1
 
-      msg, headers = driver.messages["/topic/foo"].first
+      msg, headers = driver.messages["/queue/foo"].first
 
       msg.should be_a_json_string_equal_to({"bar" => "baz"})
 
